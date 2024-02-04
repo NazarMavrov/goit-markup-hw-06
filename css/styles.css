@@ -175,7 +175,7 @@ img { display: block;}
     (min-resolution: 192dpi) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
-        url(/images/hero-bg2x-min.jpg);
+        url(../images/hero-bg2x-min.jpg);
     }
     
 }
@@ -252,8 +252,9 @@ img { display: block;}
 
 .features-list-item {
     text-align: center;
+}
+.features-list-item:not(:last-child) {
     margin-bottom: 72px;
-    
 }
 
 .feautures-name {
@@ -265,6 +266,8 @@ img { display: block;}
     margin-bottom: 8px;
     text-transform: capitalize;
 }
+
+
 
 .feautures-name-describe {
     text-align: start;
@@ -284,7 +287,8 @@ img { display: block;}
 
 }
 
-.team-haeder {color:#2E2F42;
+.team-haeder {
+    color:#2E2F42;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -399,8 +403,6 @@ img { display: block;}
 
 .portfolio-list-item {
     width: 100%;
-    padding-bottom: 32px;
-    margin-bottom: 8px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
@@ -618,9 +620,8 @@ img { display: block;}
 }
 
 .footer-subscribe-icon {
-    margin-left: 16px;
+    fill: #FFFFFF;
 }
-
 
 /* -----footer----- */
 
@@ -947,18 +948,23 @@ img { display: block;}
     /* -------hero---------------- */
 
     /* -------feautures---------------- */
-        .feautures {
-            padding: 96px 0 24px;
-        }
+    .feautures {
+           padding: 96px 0 96px;
+    }
     
     .features-list {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 72px 24px;
     }
 
-    .features-list-item{
-        width: calc((100% - 24px) / 2)
+    .features-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .features-list-item:not(:last-child){
+        margin-bottom: 0;
     }
     /* -------feautures---------------- */
     
@@ -983,6 +989,14 @@ img { display: block;}
         width: calc((100% - 24px) / 2);
     }
 
+    .portfolio-list-item-name {
+        margin-top: 0;
+        padding-left: 0;
+    }
+    
+    .portfolio-list-item-type {
+        padding-left: 0;
+    }
     /* ---------portfolio---------- */
     
     /* ---------footer---------- */
@@ -1001,6 +1015,14 @@ img { display: block;}
 
     .footer-logo {
         display: flex;
+    }
+
+    .footer-text {
+        margin-bottom: 0;
+    }
+
+    .footer-list-icon {
+        margin-bottom: 0;
     }
 
     .footer-soc {
