@@ -1084,7 +1084,7 @@ img { display: block;}
         (min-resolution: 192dpi) {
             .hero {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                    url..(/images/people-office2x-min.jpg);
+                    url(./images/people-office2x-min.jpg);
             }
     
         }
